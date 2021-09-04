@@ -1,38 +1,351 @@
 /*mise en forme avant
 travail sur CSS*/
 
-/*-------------------------------------*/
+/*-----------MISE EN FORME GENERALE-------------------*/
 
-/*Police du site*/
-
-html
-{
+html{
   font-family: 'Raleway', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  line-height: 15px;
+
   }
 
-/*notation paramétres*/
+a{
+  color: #000;
+  text-decoration: none;
+}
 
-.star-full{
+li{
+  list-style: none;
+}
+
+/*-----------EN-TÊTE DU SITE-------------------*/
+
+.nav{
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menu-link li{
+  display: inline;
+  padding-right: 15px;  
+}
+
+#inscription a{
+  color: rgb(0, 101, 252);
+  font-weight: bold
+}
+
+nav a:hover{
+  color: rgb(0, 101, 252);
+  border-top: 3px solid rgb(0, 101, 252);
+  padding-top: 20px;
+}
+
+nav a:visited{
+  color: rgb(0, 101, 252);
+  border-top: 3px solid rgb(0, 101, 252);
+  padding-top: 20px; 
+}
+
+/*-----------CORPS DU SITE-------------------*/
+
+/*recherches*/
+
+.search-title h1{
+
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.search-title p{
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.search-bar i{
+  border-radius: 10px 0px 0px 10px ;
+  padding: 14px;
+  margin-right: -4px;
+  background-color: rgb(242, 242, 242);
+}
+
+
+#search-bar{
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid rgb(242, 242, 242);
+  border-bottom: 1px solid rgb(242, 242, 242);
+  border-left: 0;
+  border-right: 0;
+  padding: 11px;
+  margin-right: -3px;
+  margin-bottom: 20px;
+
+}
+
+.search-bar ::placeholder{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.search-bar button{
+    color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px 15px 15px 0px ;
+  padding: 11px;
+  margin-left: 0;
+  background-color: rgb(0, 101, 252);
+}
+
+
+/*Filtres*/
+
+.seach-filter{
+  display: inline-flex;
+}
+
+.filter-title h3{
+  font-weight: bold;
+  width: 80px;
+  padding-top: 10px;
+}
+
+.filter ul{
+  padding-left: 0;
+
+}
+
+.filter li{
+  display: inline;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+.filter i{
+  color: rgb(0, 101, 252);
+  padding: 12px;
+  margin-right: -16px ;
+  border: 2px solid rgb(242, 242, 242);
+  border-radius: 20px 20px 20px 20px ;
+  background-color: rgb(222, 235, 255);
+}
+
+.filter a{
+  color: #000;
+  padding : 10px;
+  padding-left: 22px;
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 0px 20px 20px 0px;
+  border-left: none;
+}
+
+/*Filtres information*/
+
+.filter-info{
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
+.filter-info i{
+  font-size: 20px;
+  color: white;
+  background-color: rgb(0, 101, 252);
+  border: 3px solid rgb(241, 241, 241);
+  border-radius: 20px;
+}
+
+/*Notations*/
+
+.stars{
   
-  color: rgb(63, 75, 184);
+  font-size: 12px;
+  color: rgb(0, 101, 252);
+  margin-left: 5px;
 }
 
 .star-empty{
-
-  color: rgb(194, 194, 202);
+  color: rgb(241, 241, 241)
 }
 
-/*images reduction*/
+/*promos*/
 
-main img{
+aside{
+  width: 35%;
+  height: 600px;
+  margin-left: 0;
+  border-radius: 6px ;
+  float: right;
+  background-color:rgb(242, 242, 242)
+}
 
-  height: 200px;
+.promos-title{
+  padding-left: 15px;
+}
+
+.promo-icone-right i{
+  padding-left: 150px;
+}
+
+aside img{
+  width: 40%;
+  height: 120px;
+  float: left;
+  border: none;
+  padding-right: 5px;
+  border-radius: 10px 0px 0px 6px;
+}
+
+#promos{
+  line-height: 15px;
+}
+
+.promos{
+  display: block;
   width: 300px;
-  border-radius: 10px 10px 0px 0px ;
+  height: 120px;
+  margin: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/*images reduction*/
+.promos h4, p{
+  margin: 15px;
+}
 
-a{
+.promos p{
+  margin-bottom: 30px;
+}
 
-text-decoration: none;
+/*logement*/
+
+#lodging{
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  padding: 15px;
+  width: 60%;
+  margin-bottom: 35px;
+    
+}
+
+.lodging-block{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lodging{
+  width: 210px;
+  height: 200px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#lodging img{
+  height: 100px;
+  width: 200px;
+  border-radius: 10px 10px 0px 0px ;
+  padding: 5px;
+}
+
+.lodging h4{
+  line-height: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.lodging p{
+  margin-left: 5px;
+  margin-top: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+.next-page{
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/*Activités*/
+
+/*bloc1*/
+
+.bloc1{
+
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+font-size: 16px;
+font-weight: bold;
+}
+
+.bloc1 img{
+
+  width: 200px;
+  height: 150px;
+  border-radius: 10px 10px 0px 0px  ;
+}
+
+.activity1 img{
+width: 250px;
+height: 290px;
+}
+
+.activity4 img{
+  width: 250px;
+  height: 290px;
+  }
+
+
+/*-----------PIED DE PAGE-------------------*/
+
+footer{
+  margin-left: -100px;
+  margin-right: -100px;
+  background-color: rgb(241, 241, 241);
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+footer h4{
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom:0 ;
+}
+
+footer ul{
+  padding-left: 0;
+}
+
+
+footer li{
+margin: 5px;
+padding: 5px;
+}
+
