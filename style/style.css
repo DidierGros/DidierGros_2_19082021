@@ -3,13 +3,16 @@ travail sur CSS*/
 
 /*-----------MISE EN FORME GENERALE-------------------*/
 
+*{
+  box-sizing: border-box;
+}
+
 html{
   font-family: 'Raleway', sans-serif;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 15px;
   line-height: 15px;
-
   }
 
 a{
@@ -27,12 +30,16 @@ li{
 
   display: flex;
   justify-content: space-between;
+}
 
+.logo{
+  width: 50%;
+  margin-right: 20px;
 }
 
 .menu-link li{
   display: inline;
-  padding-right: 15px;  
+  padding : 15px;
 }
 
 #inscription a{
@@ -57,9 +64,9 @@ nav a:visited{
 /*recherches*/
 
 .search-title h1{
-
   margin-top: 40px;
   margin-bottom: 0;
+  line-height: 1.2em;
 }
 
 .search-title p{
@@ -74,7 +81,6 @@ nav a:visited{
   background-color: rgb(242, 242, 242);
 }
 
-
 #search-bar{
   font-size: 16px;
   font-weight: bold;
@@ -85,7 +91,6 @@ nav a:visited{
   padding: 11px;
   margin-right: -3px;
   margin-bottom: 20px;
-
 }
 
 .search-bar ::placeholder{
@@ -93,8 +98,8 @@ nav a:visited{
   color: black;
 }
 
-.search-bar button{
-    color: white;
+.search-bar .button{
+  color: white;
   font-size: 16px;
   border: none;
   border-radius: 0px 15px 15px 0px ;
@@ -103,32 +108,37 @@ nav a:visited{
   background-color: rgb(0, 101, 252);
 }
 
-
 /*Filtres*/
 
 .seach-filter{
   display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
 .filter-title h3{
-  font-weight: bold;
-  width: 80px;
-  padding-top: 10px;
+  font-weight: bolder;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-right: 20px;
 }
 
 .filter ul{
+  display: flex;
   padding-left: 0;
-
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 25px;
 }
 
 .filter li{
-  display: inline;
   font-size: 16px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 0px;
-  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 1.5em;
   padding: 0;
 }
 
@@ -139,22 +149,36 @@ nav a:visited{
   border: 2px solid rgb(242, 242, 242);
   border-radius: 20px 20px 20px 20px ;
   background-color: rgb(222, 235, 255);
+  z-index: 2;
 }
 
 .filter a{
+  font-weight: bolder;
   color: #000;
+  background-color: transparent;
   padding : 10px;
   padding-left: 22px;
   border: 2px solid rgb(241, 241, 241);
   border-radius: 0px 20px 20px 0px;
   border-left: none;
+  transition-property: border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+  z-index: 1;
 }
+
+.filter a:hover{
+  border: 1.5px solid rgba(241, 241, 241,0.30);
+  border-left: 0;
+ }
 
 /*Filtres information*/
 
 .filter-info{
   margin-left: 0px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .filter-info i{
@@ -168,33 +192,49 @@ nav a:visited{
 /*Notations*/
 
 .stars{
-  
   font-size: 12px;
   color: rgb(0, 101, 252);
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .star-empty{
   color: rgb(241, 241, 241)
 }
 
+
 /*promos*/
 
 aside{
-  width: 35%;
-  height: 600px;
-  margin-left: 0;
-  border-radius: 6px ;
   float: right;
+  width: 30%;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px ;
   background-color:rgb(242, 242, 242)
 }
 
 .promos-title{
-  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.promos-title h2{
+  width: 80%;
+  padding-top: 20px;
+  padding: 0;
 }
 
 .promo-icone-right i{
-  padding-left: 150px;
+  width: 20%;
+  height: auto;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin: auto;
 }
 
 aside img{
@@ -202,31 +242,43 @@ aside img{
   height: 120px;
   float: left;
   border: none;
-  padding-right: 5px;
+  padding-right: 10px;
   border-radius: 10px 0px 0px 6px;
-}
-
-#promos{
-  line-height: 15px;
+  object-fit: cover;
 }
 
 .promos{
-  display: block;
-  width: 300px;
-  height: 120px;
-  margin: 25px;
+  display: inline-block;
+  line-height: 20px;
+  width: 85%;
+  height: auto;
+  margin: 15px;
+  margin-bottom: 20px; 
   padding: 5px;
   border-radius: 10px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition-property: width, height, line-height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
 }
 
-.promos h4, p{
-  margin: 15px;
+.promos:hover{
+  height: auto;
+	width: 95%;
+	line-height: 25px;
+}
+
+.promos h3{
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .promos p{
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 /*logement*/
@@ -235,9 +287,9 @@ aside img{
   background-color: rgb(241, 241, 241);
   border-radius: 10px;
   padding: 15px;
-  width: 60%;
-  margin-bottom: 35px;
-    
+  width: 68%;
+  height: auto;
+  margin-bottom: 40px;    
 }
 
 .lodging-block{
@@ -247,34 +299,67 @@ aside img{
 }
 
 .lodging{
-  width: 210px;
+  width: 30%;
   height: 200px;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
   border-radius: 10px 10px 10px 10px ;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.lodging:hover{
+  height: 210px;
+	width: 35%;
 }
 
 #lodging img{
-  height: 100px;
-  width: 200px;
+  width: 100%;
+  height: 120px;
   border-radius: 10px 10px 0px 0px ;
   padding: 5px;
+  object-fit:cover;
 }
 
+
+/* voir avec les balises figure et figcaptation
+
+#lodging figure{
+  width: 100%;
+  height: 120px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+figure img{
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+*/
+
 .lodging h4{
+  font-weight: bolder;
   line-height: 5px;
   font-size: 16px;
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .lodging p{
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 0;
+  display: block;
 }
 
 span{
@@ -284,40 +369,187 @@ span{
 .next-page{
   text-align: left;
   margin-left: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-/*Activités*/
+/*Activities*/
 
-/*bloc1*/
-
-.bloc1{
-
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-font-size: 16px;
-font-weight: bold;
+.bloc{
+  display: flex;
+  width: 100%;
 }
 
-.bloc1 img{
+.bloc h4{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+ }
 
-  width: 200px;
-  height: 150px;
-  border-radius: 10px 10px 0px 0px  ;
+.activity-item {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.activity1{
+  height: 420px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.activity1:hover{
+  width: 95%;
+  height: 440px;
 }
 
 .activity1 img{
-width: 250px;
-height: 290px;
+  width: 100%;
+  height: 380px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.activity2{
+  height: 200px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 40px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.activity2:hover{
+  width: 95%;
+  height: 220px;
+}
+
+.activity2 img{
+  width: 100%;
+  height: 80%;
+  padding-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.activity3{
+  height: 180px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 30px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.activity3:hover{
+  width: 95%;
+  height: 200px;
+}
+
+.activity3 img{
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.activity4{
+  height: 420px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.activity4:hover{
+  width: 95%;
+  height: 440px;
 }
 
 .activity4 img{
-  width: 250px;
-  height: 290px;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.activity5{
+  height: 180px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 30px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+  }
+  
+  .activity5:hover{
+    width: 95%;
+    height: 200px;
   }
 
+.activity5 img{
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+  
+.activity6{
+  height: 200px;
+  width: 90%;
+  border: 0px solid rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 40px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
 
+.activity6:hover{
+  width: 95%;
+  height: 220px;
+}
+
+.activity6 img{
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+  
 /*-----------PIED DE PAGE-------------------*/
 
 footer{
@@ -331,7 +563,6 @@ footer{
   justify-content: space-around;
 }
 
-
 footer h4{
   margin-bottom: 10px;
   padding-top: 20px;
@@ -343,9 +574,150 @@ footer ul{
   padding-left: 0;
 }
 
-
 footer li{
-margin: 5px;
-padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
+/*-----------TABLETTE MEDIA QUERIES-------------------*/
+
+@media only screen and (max-width: 1024px){
+  
+body {
+    background-color: rgb(119, 119, 64); /*comme repair*/
+}
+
+/*@entête----*/
+
+
+/*@promos----*/
+
+aside{
+  float: none;
+  width: 100%;
+  height: auto;
+  border-radius:initial;
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 20px;
+}
+
+.promos-title{
+  display:flex;
+  justify-content: space-between;
+}
+
+/*@alodging----*/
+
+#lodging{
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  border-radius:initial;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+.lodging{
+  width: 40%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*@activities----*/
+
+#activity{
+  background-color: rgb(255, 255, 255);
+}
+
+.bloc{
+  display: block;
+  align-items: center;   
+}
+
+.activity-item{
+  margin-bottom: 1.5em; 
+}
+
+/*----en cours de test---
+
+.activity1{
+  width: 60%;
+  height: auto;
+}
+
+.activity1 img{
+  width: 100%;
+  height: auto;
+}
+
+.activity2{
+  width: 60%;
+  height: auto;
+}
+
+.activity2 img{
+  width: 100%;
+  height: auto;
+}
+
+.activity3{
+  width: 60%;
+  height: auto;
+}
+
+.activity3 img{
+  width: 100%;
+  height: auto;
+}
+
+--------------*/
+
+/*@footer----*/
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px;
+}
+
+
+}
+
+
+/*-----------SMARTPHONE MEDIA QUERIES-------------------*/
+
+@media only screen and (max-width: 800px) {
+
+  
+body {    
+  background-color: lightblue;
+}
+
+.lodging{
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+
+
+
+
+}
