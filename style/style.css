@@ -164,7 +164,7 @@ nav a:visited{
   transition-property: border;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
   z-index: 1;
 }
 
@@ -261,7 +261,7 @@ aside img{
 	transition-property: width, height, line-height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .promos:hover{
@@ -310,7 +310,7 @@ aside img{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .lodging:hover{
@@ -404,7 +404,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .activity1:hover{
@@ -430,7 +430,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .activity2:hover{
@@ -457,7 +457,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .activity3:hover{
@@ -482,7 +482,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .activity4:hover{
@@ -508,7 +508,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
   }
   
   .activity5:hover{
@@ -534,7 +534,7 @@ span{
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
+  transition-delay: 0.5s;
 }
 
 .activity6:hover{
@@ -712,12 +712,6 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-
-
-
-
-
 
 
 }
