@@ -269,9 +269,9 @@ aside{
   grid-template-rows: 1fr;
   line-height: 1em;
   width: 90%;
-  max-height: 120px;
-  margin-left: 10%;
-  margin-right: 10px;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5px;
   margin-bottom: 20px; 
   padding: 5px;
   border-radius: 10px;
@@ -289,6 +289,7 @@ aside{
 
 .promos img{
   width: 100%;
+  height: 110px;
   max-height: 110px;
   float: left;
   border: none;
@@ -313,8 +314,6 @@ aside{
 
 .offer{
   grid-column: 2;
-  position: relative;
-  z-index: 0;
 }
   
 .pic{
@@ -325,7 +324,6 @@ aside{
 .promos a{
 width: 100%;
 }
-
 
 #promos .stars{
   grid-column: 2;
@@ -740,6 +738,7 @@ aside{
   
 #activity .bloc{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-self: center;
 }
@@ -749,8 +748,6 @@ aside{
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  align-content: center;
 }
 
 .activity1{
@@ -982,7 +979,7 @@ aside{
 
  /*@@.....Promos....*/
   
- /* #promos{
+ #promos{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -990,10 +987,7 @@ aside{
     height: auto;
     line-height: 20px;
     padding: 5px;
-  }*/
-
-
-
+  }
 
   .promos{
     max-width: 90%;
@@ -1027,5 +1021,6 @@ aside{
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  
+ 
+
 }
