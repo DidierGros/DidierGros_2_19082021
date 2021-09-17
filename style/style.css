@@ -5,8 +5,8 @@
 }
 
 body{
-  Max-width: 1440px;
-  Margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   margin-top: 3px;
 }
@@ -23,14 +23,18 @@ li{
 /*-----------EN-TÊTE DU SITE-------------------*/
 
 header{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+header{
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .logo{
   width: 30%;
   margin-right: 200px;
-  padding-left: 0.5em;
   padding-left: 0.5em;
 }
 
@@ -45,7 +49,7 @@ nav a{
   text-align: center;
 }
 
-#inscription{
+.inscription{
   color: rgb(0, 101, 252);
   font-weight: bold;
   width: 10%;
@@ -67,6 +71,11 @@ nav a:visited{
 
 /*-----------CORPS DU SITE-------------------*/
 
+main{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 /*recherches*/
 
 #search{
@@ -85,7 +94,7 @@ nav a:visited{
 }
 
 .search-bar i{
-  border-radius: 10px 0px 0px 10px ;
+  border-radius: 10px 0 0 10px ;
   padding: 14px;
   margin-right: -4px;
   background-color: rgb(242, 242, 242);
@@ -113,7 +122,7 @@ nav a:visited{
   color: white;
   font-size: 15px;
   border: none;
-  border-radius: 0px 15px 15px 0px ;
+  border-radius: 0 15px 15px 0 ;
   padding: 11px;
   margin-left: 0;
   background-color: rgb(0, 101, 252);
@@ -133,7 +142,7 @@ nav a:visited{
 }
 
 .filter-title h3{
-  font-weight: bolder;
+  font-weight: bold;
   padding-bottom: 10px;
   margin-right: 15px;
 }
@@ -265,7 +274,6 @@ aside{
   margin: auto;
 }
 
-
 .promos{
   display: grid;
   grid-template-columns: 40% 50%;
@@ -279,7 +287,7 @@ aside{
   padding: 5px;
   border-radius: 10px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 	transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -297,7 +305,7 @@ aside{
   float: left;
   border: none;
   padding-right: 10px;
-  border-radius: 10px 0px 0px 6px;
+  border-radius: 10px 0 0 6px;
   object-fit: cover;
 }
 
@@ -334,9 +342,8 @@ width: 100%;
   text-align: left;
   width: 100%;
   max-height: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
-
 
 /*logement*/
 
@@ -363,7 +370,7 @@ width: 100%;
   margin-bottom: 10px;
   border-radius: 10px 10px 10px 10px ;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -377,7 +384,7 @@ width: 100%;
 #lodging img{
   width: 100%;
   height: 120px;
-  border-radius: 10px 10px 0px 0px ;
+  border-radius: 10px 10px 0 0 ;
   padding: 5px;
   object-fit:cover;
 }
@@ -424,12 +431,11 @@ span{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.5em;
-  
+  padding: 0.5em; 
 }
 
 .bloc h4{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -445,7 +451,7 @@ span{
   height: auto;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -453,13 +459,13 @@ span{
 }
 
 .activity1:hover{
-  width: 92%;
+  width: 95%;
 }
 
 .activity1 img{
   width: 100%;
   height: 360px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -468,7 +474,7 @@ span{
   height: 180px;
   width: 100%; 
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   margin-bottom: 40px;
   transition-property: width;
   transition-duration: 0.3s;
@@ -484,7 +490,7 @@ span{
   width: 100%;
   height: 70%;
   padding-bottom: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: left;
 }
@@ -493,7 +499,7 @@ span{
   height: 180px;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   margin-bottom: 30px;
   transition-property: width;
   transition-duration: 0.3s;
@@ -508,7 +514,7 @@ span{
 .activity3 img{
   width: 100%;
   height: 75%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -517,7 +523,7 @@ span{
   height: auto;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -531,7 +537,7 @@ span{
 .activity4 img{
   width: 100%;
   height: 360px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -540,7 +546,7 @@ span{
   height: 160px;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   margin-bottom: 30px;
   transition-property: width;
   transition-duration: 0.3s;
@@ -555,7 +561,7 @@ span{
 .activity5 img{
   width: 100%;
   height: 70%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -564,7 +570,7 @@ span{
   height: 200px;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   margin-bottom: 40px;
   transition-property: width;
   transition-duration: 0.3s;
@@ -579,7 +585,7 @@ span{
 .activity6 img{
   width: 100%;
   height: 80%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -593,27 +599,23 @@ footer{
 
 .footer{
   display: flex;
-  justify-content: space-between;
-}
-
-.footerBloc{
-margin-right: 30px;
+  justify-content: flex-start;
+  column-gap: 11em;
 }
 
 footer h4{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-top: 20px;
-  padding-left: 10px;
-  padding-bottom:0 ;
+  padding-left: 35px;
+  padding-bottom:0;
 }
 
 footer ul{
-  padding-left: 5px;
+  padding-left: 35px;
 }
 
-footer li{
-  margin: 5px;
-  padding: 5px;
+footer li{  
+  padding-top: 10px;
 }
 
 /*-----------TABLETTE MEDIA QUERIES-------------------*/
@@ -652,7 +654,7 @@ nav > .nav{
   text-align: center;
 }
   
-#inscription{
+.inscription{
   grid-column-start: 5;
   padding-right: 10px;
   justify-content: center;
@@ -698,7 +700,7 @@ aside{
   float: left;
   border: none;
   padding-right: 0;
-  border-radius: 10px 0px 0px 6px;
+  border-radius: 10px 0 0 6px;
   object-fit: cover;
   object-position: center;
 }
@@ -724,7 +726,7 @@ aside{
   margin-bottom: 10px;
   border-radius: 10px 10px 10px 10px ;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
   
 /*@activities----*/
@@ -737,7 +739,7 @@ aside{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-self: center;
+  justify-self: stretch;
 }
 
 .activity-item{
@@ -755,14 +757,14 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
   
 .activity1 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -775,14 +777,14 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
  .activity2 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
  }
@@ -795,14 +797,14 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   }
   
 .activity3 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
 }
@@ -815,14 +817,14 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
     
 .activity4 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
 }
@@ -835,18 +837,17 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
     
 .activity5 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
 }
-
 
 .activity6{
   max-width: 80%;
@@ -856,14 +857,14 @@ aside{
   margin-left: 10%;
   margin-bottom: 40px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
     
 .activity6 img{
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
 }
@@ -890,7 +891,7 @@ aside{
     grid-template-rows: 1fr;
   }
   
-  #inscription{
+  .inscription{
     width: auto;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -933,7 +934,7 @@ aside{
 }
 
 .fa-map-marker-alt{
-  border-radius: 10px 0px 0px 10px ;
+  border-radius: 10px 0 0 10px ;
   padding: 10px;
   margin-right: -4px;
   background-color: rgb(242, 242, 242);
@@ -967,7 +968,6 @@ aside{
   margin-left: -15px; 
   }
   
-
  /*@@.....Promos....*/
   
  #promos{
@@ -998,7 +998,7 @@ aside{
   float: left;
   border: none;
   padding-right: 10px;
-  border-radius: 10px 0px 0px 6px;
+  border-radius: 10px 0 0 6px;
   object-fit: cover;
   }
   
@@ -1010,7 +1010,7 @@ aside{
   margin-bottom: 10px;
   border-radius: 10px 10px 10px 10px ;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   }
  
 }

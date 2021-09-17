@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     
     <title>Réservia - openclassrooms</title>
 </head>
 
 <body>
-    <!--Header-->
+<!--Header-->
     <header>
     <!--Navbar-->
-    <div class="logo">
-        <img src="images/logo/Reservia.svg" alt="logo de réservia">
-    </div>
+        <div class="logo">
+            <img src="images/logo/Reservia.svg" alt="logo du site réservia">
+        </div>
 
-    <nav class="nav">
-         <a class="nav1" href="#lodging">Hébergement</a>
-         <a class="nav2" href="#activity">Activites</a>                      
-    </nav>       
-        <a id="inscription" href="#">s'inscrire</a>   
- 
+        <nav class="nav">
+            <a class="nav1" href="#lodging">Hébergement</a>
+            <a class="nav2" href="#activity">Activites</a>                      
+        </nav>       
+            <a class="inscription" href="#">S'inscrire</a> 
     </header> 
 
-    <!--Main Page-->
+<!--Main Page-->
     <main>
 
-        <!--Search Bar-->
+    <!--Search Bar-->
         <section id="search">
 
             <div class="search-title">
@@ -41,7 +40,8 @@
             </div>
 
             <div class="search-bar">
-                <form action="search">
+
+            <form>
                 <i class="fas fa-map-marker-alt"></i> <input id="search-bar" type="search" name="search-bar" placeholder="Marseille, France">
                 <input class="button" type="submit" value="Rechercher">
             </form>
@@ -108,11 +108,11 @@
                 </a>
                 
                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                    <span class="star-empty"><i class="fas fa-star"></i></span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star star-empty"></i>
                 </div>                
             </div>
         
@@ -130,7 +130,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <span class="star-empty"><i class="fas fa-star"></i></span>
+                    <i class="fas fa-star star-empty"></i>
                 </div>                    
             </div>            
     </aside>
@@ -180,7 +180,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <span class="star-empty"><i class="fas fa-star"></i></span>
+                    <i class="fas fa-star star-empty"></i>
                 </div>                    
             </div>
 
@@ -193,8 +193,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <span class="star-empty"><i class="fas fa-star"></i></span>
-                    <span class="star-empty"><i class="fas fa-star" ></i></span>
+                    <i class="fas fa-star star-empty"></i>
+                    <i class="fas fa-star star-empty"></i>
                 </div>
             </div>
 
@@ -208,7 +208,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <span class="star-empty"><i class="fas fa-star"></i></span>
+                    <i class="fas fa-star star-empty"></i>
                 </div>
             </div>
               
@@ -249,7 +249,6 @@
                 </div>                
                
             <div class="activity-item">
-                
                     <div class= activity2>
                         <a href="#"> 
                         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues">
@@ -297,7 +296,7 @@
 
     <footer id="footer">
         <div class="footer"> 
-            <div class= footerBloc>
+            <div class= footer-bloc>
                 <h4>A propos</h4>
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
@@ -306,7 +305,7 @@
                 </ul>
             </div>
 
-            <div class= footerBloc>
+            <div class= footer-bloc>
                 <h4>Nos hébergements</h4>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
@@ -314,16 +313,12 @@
                 </ul>
             </div>
 
-            <div class= footerBloc>
+            <div class= footer-bloc>
                 <h4>Assistance</h4>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
-            </div>
-
-            <div class= footerBloc>
-                               
             </div>
     </div>
     </footer>
