@@ -276,7 +276,7 @@ aside{
 
 .promos{
   display: grid;
-  grid-template-columns: 40% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 1fr;
   line-height: 1em;
   width: 90%;
