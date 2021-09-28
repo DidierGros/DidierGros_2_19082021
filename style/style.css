@@ -184,10 +184,6 @@ main{
   border: 2px solid rgb(241, 241, 241);
   border-radius: 0 20px 20px 0;
   border-left: none;
-  /*transition-property: border, background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0.3s;*/
   z-index: 1;
 }
 
@@ -1025,10 +1021,6 @@ aside{
   border-radius: 10px 10px 10px 10px ;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-  /*transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0.5s;*/
 }
 
 .lodging:hover{
